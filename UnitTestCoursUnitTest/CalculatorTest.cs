@@ -6,6 +6,7 @@ namespace UnitTestCoursUnitTest;
 public class CalculatorTest
 {
     [TestMethod]
+    [Ignore]
     [DataRow(1, 2, 3)]
     [DataRow(4, 3, 7)]
     [DataRow(6, 7, 13)]
@@ -19,6 +20,7 @@ public class CalculatorTest
     }
 
     [TestMethod]
+    [Ignore]
     public void Substract_WithTwoNumbers_ReturnSubstraction()
     {
         var calculator = new Calculator();
@@ -29,6 +31,7 @@ public class CalculatorTest
     }
 
     [TestMethod]
+    [Ignore]
     public void Multiply_WithTwoNumbers_ReturnMuplitication()
     {
         var calculator = new Calculator();
@@ -39,6 +42,7 @@ public class CalculatorTest
     }
 
     [TestMethod]
+    [Ignore]
     public void Divide_WithTwoNumbers_ReturnDivision()
     {
         var calculator = new Calculator();

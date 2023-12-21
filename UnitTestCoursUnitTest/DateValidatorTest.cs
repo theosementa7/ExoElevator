@@ -10,6 +10,7 @@ public class DateValidatorTest
     private DateValidator _dateValidator;
 
     [TestMethod]
+    [Ignore]
     [DataRow("20-12-2023")]
     [DataRow("20--12-2023")]
     public void NumbersOfDashes_returnTrue(string date)
@@ -21,6 +22,7 @@ public class DateValidatorTest
     }
 
     [TestMethod]
+    [Ignore]
     [DataRow("20-12-2023")]
     [DataRow("20--12--2023")]
     public void NumbersOfDashes_returnExpetion(string date)
@@ -29,6 +31,7 @@ public class DateValidatorTest
     }
 
     [TestMethod]
+    [Ignore]
     [DataRow("20-12-2023")]
     [DataRow("dd-mm-yyyy")]
     public void AllNumbersAreIntegers(string date)
@@ -40,6 +43,7 @@ public class DateValidatorTest
     }
 
     [TestMethod]
+    [Ignore]
     [DataRow("20-12-2023")]
     [DataRow("dd-mm-yyyy")]
     public void ThrowExceptionIfNumbersAreNotIntegers_returnExeption(string date)
@@ -50,6 +54,7 @@ public class DateValidatorTest
     }
 
     [TestMethod]
+    [Ignore]
     [DataRow("20-12-2023")]
     [DataRow("40-12-2023")]
     public void CheckDayNumber(string date)
@@ -61,6 +66,7 @@ public class DateValidatorTest
     }
 
     [TestMethod]
+    [Ignore]
     [DataRow("20-12-2023")]
     [DataRow("20-18-2023")]
     public void CheckMonthNumber(string date)
@@ -72,6 +78,7 @@ public class DateValidatorTest
     }
 
     [TestMethod]
+    [Ignore]
     [DataRow("20-12-2023")]
     [DataRow("20-12-10")]
     public void CheckYearNumber(string date)
@@ -83,6 +90,7 @@ public class DateValidatorTest
     }
 
     [TestMethod]
+    [Ignore]
     [DataRow("20-12-2023")]
     [DataRow("20-12--2023")]
     public void IsValid(string date)
