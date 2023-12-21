@@ -6,8 +6,6 @@ namespace UnitTestCoursUnitTest;
 public class ElevatorTest
 {
 
-    private var elevator = new Elevator(500);
-
     [TestMethod]
     public void AddUser_return100()
     {
